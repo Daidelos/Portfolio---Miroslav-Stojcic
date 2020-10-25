@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-miroslavstojcic",
+  "version": "1.0.0",
+  "description": "myportfolio",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "watch:sass": "node-sass sass/custom.scss css/custom.css -w",
+    "compile:sass": "node-sass sass/custom.scss css/custom.css",
+    "compress:css": "node-sass sass/custom.scss css/custom.min.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daidelos/Portfolio---Miroslav-Stojcic.git"
+  },
+  "author": "Miroslav Stojcic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daidelos/Portfolio---Miroslav-Stojcic/issues"
+  },
+  "homepage": "https://github.com/Daidelos/Portfolio---Miroslav-Stojcic#readme"
+}

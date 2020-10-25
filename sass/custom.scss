@@ -8,7 +8,7 @@ $theme-colors: (
   'info': #e8ffff,
 );
 
-$font-family-sans-serif: 'Josefin Sans', sans-serif;
+$font-family: 'Montserrat', sans-serif;
 
 // Option A: Include all of Bootstrap
 
@@ -27,3 +27,7 @@ $font-family-sans-serif: 'Josefin Sans', sans-serif;
 // @import 'layout/footer';
 // @import 'components/carousel';
 // @import 'components/social-proof';
+
+header {
+  font-weight: 800;
+}
