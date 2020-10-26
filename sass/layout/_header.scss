@@ -1,0 +1,47 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/Hero+overlay.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+// Navbar-toggler button outline change
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    outline: 1px solid rgba(#fff, 0.3);
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.upwork {
+  opacity: 70%;
+  margin-right: 4px;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 100%;
+  }
+}
+
+.social-icons {
+  color: rgb(181, 255, 255) !important;
+  opacity: 70%;
+  margin: 0 0.5rem;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 100%;
+  }
+}
