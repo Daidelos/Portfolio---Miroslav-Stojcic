@@ -22,49 +22,68 @@
   <header class="header">
 
     <!-- Navbar  -->
+    <div class="container-fluid nav-border">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <span class="navbar-brand">Logo</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
-    <div class="container-xl border-bottom">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <span class="navbar-brand">Logo</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link px-lg-3 active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link px-lg-3" href="#">About me</a>
+              <a class="nav-link px-lg-3" href="#">Services</a>
+              <a class="nav-link px-lg-3" href="#">Portfolio</a>
+              <a class="nav-link px-lg-3" href="#">Contact me</a>
+            </div>
 
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">About me</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Contact me</a>
+            <div class="nav-icons ml-auto">
+              <a px-lg-3 class="nav-link upwork" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
+                target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1379 8.68544C15.2122 8.68544 14.3445 8.29608 13.5557 7.66245L13.7473 6.76537L13.754 6.73035C13.9279 5.7774 14.4671 4.17915 16.1387 4.17915C16.7408 4.17959 17.318 4.41716 17.7437 4.83969C18.1695 5.26222 18.4088 5.83516 18.4093 6.43271C18.4081 7.03012 18.1684 7.60272 17.7427 8.025C17.3169 8.44728 16.7398 8.68477 16.1379 8.68544ZM16.1379 1.89891C14.0051 1.89891 12.3495 3.27373 11.6775 5.53896C10.6527 4.0099 9.87318 2.17404 9.42042 0.626648H7.12218V6.5561C7.12151 7.11916 6.89592 7.65898 6.49486 8.0572C6.09379 8.45543 5.55 8.67955 4.9827 8.68043C4.41563 8.67933 3.87213 8.45508 3.47139 8.05686C3.07064 7.65864 2.84535 7.11894 2.8449 6.5561V0.626648H0.546661V6.5561C0.546661 8.98558 2.53746 10.9773 4.9827 10.9773C7.42962 10.9773 9.42042 8.98558 9.42042 6.5561V5.56397C9.86478 6.4869 10.4133 7.42234 11.0786 8.2494L9.67326 14.8133H12.0227L13.0417 10.0527C13.9346 10.6188 14.9611 10.9773 16.1379 10.9773C18.6579 10.9773 20.7067 8.93305 20.7067 6.43354C20.7067 3.93237 18.6579 1.89891 16.1379 1.89891Z"
+                    fill="#f5f5f7" />
+                </svg>
+              </a>
+              <a class=" nav-link px-lg-3 social-icons" href="#"><i class="fab fa-github"></i></a>
+              <a class="nav-link px-lg-3 social-icons" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
 
 
 
           </div>
-          <div class="nav-icons ml-auto">
-            <a class="nav-link upwork" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
-              target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1379 8.68544C15.2122 8.68544 14.3445 8.29608 13.5557 7.66245L13.7473 6.76537L13.754 6.73035C13.9279 5.7774 14.4671 4.17915 16.1387 4.17915C16.7408 4.17959 17.318 4.41716 17.7437 4.83969C18.1695 5.26222 18.4088 5.83516 18.4093 6.43271C18.4081 7.03012 18.1684 7.60272 17.7427 8.025C17.3169 8.44728 16.7398 8.68477 16.1379 8.68544ZM16.1379 1.89891C14.0051 1.89891 12.3495 3.27373 11.6775 5.53896C10.6527 4.0099 9.87318 2.17404 9.42042 0.626648H7.12218V6.5561C7.12151 7.11916 6.89592 7.65898 6.49486 8.0572C6.09379 8.45543 5.55 8.67955 4.9827 8.68043C4.41563 8.67933 3.87213 8.45508 3.47139 8.05686C3.07064 7.65864 2.84535 7.11894 2.8449 6.5561V0.626648H0.546661V6.5561C0.546661 8.98558 2.53746 10.9773 4.9827 10.9773C7.42962 10.9773 9.42042 8.98558 9.42042 6.5561V5.56397C9.86478 6.4869 10.4133 7.42234 11.0786 8.2494L9.67326 14.8133H12.0227L13.0417 10.0527C13.9346 10.6188 14.9611 10.9773 16.1379 10.9773C18.6579 10.9773 20.7067 8.93305 20.7067 6.43354C20.7067 3.93237 18.6579 1.89891 16.1379 1.89891Z"
-                  fill="teal" />
-              </svg>
+        </nav>
+      </div>
+    </div>
 
-            </a>
-            <a class=" nav-link social-icons" href="#"><i class="fab fa-github"></i></a>
-            <a class="nav-link social-icons" href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+    <!-- Level Up Easter Egg  -->
 
+    <div class="last-try">
 
+      <pre class="last-text">               Web Development leveled up               </pre>
 
-        </div>
-      </nav>
+      <div last-bar>
+        <img src="/img/skyrim-level-bar.svg" alt="level" class="skbar">
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="row greet-box">
+        <h1 class="display-2">Hi, I'm <span class="name">Mickey</span></h1>
+        <h2 class="display-5 greet-box--desc d-block pl-2">and I'm a freelance web developer.</h2>
+        <button type="button" class="btn btn-lg btn-outline-light d-block btn-main">More about me</button>
+
+      </div>
 
 
     </div>
+
   </header>
+
 
 
   <!-- Scripts  -->
