@@ -22,9 +22,9 @@
   <header class="header">
 
     <!-- Navbar  -->
-    <div class="container-fluid nav-border">
+    <div class="container-fluid main-nav nav-border">
       <div class="container ">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
           <span class="navbar-brand">Logo</span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,19 +62,21 @@
 
     <!-- Level Up Easter Egg  -->
 
-    <div class="last-try">
+    <!-- <div class="last-try">
 
       <pre class="last-text">               Web Development leveled up               </pre>
 
       <div last-bar>
         <img src="/img/skyrim-level-bar.svg" alt="level" class="skbar">
       </div>
-    </div>
+    </div> -->
 
-    <div class="container">
+    <div class="container hero-box">
       <div class="row greet-box">
-        <h1 class="display-2">Hi, I'm <span class="name">Mickey</span></h1>
-        <h2 class="display-5 greet-box--desc d-block pl-2">and I'm a freelance web developer.</h2>
+        <h1 class="greet-box__main">Hi, I'm <span class="greet-box__name">Mickey</span>
+          <p class="greet-box__desc d-block name-typing">and I'm a freelance web developer.</p>
+        </h1>
+
         <button type="button" class="btn btn-lg btn-outline-light d-block btn-main">More about me</button>
 
       </div>
@@ -83,6 +85,10 @@
     </div>
 
   </header>
+
+  <section class="about-me">
+    <h3 class="more-about-me">About me</h3>
+  </section>
 
 
 
