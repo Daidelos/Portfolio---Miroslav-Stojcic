@@ -28,6 +28,7 @@
       rgba(0, 0, 0, 0) 100%
     );
     z-index: 15;
+    width: 100%;
 
     display: block;
   }
@@ -37,6 +38,7 @@
 
 .navbar-toggler {
   border: none;
+  padding: 0;
 
   &:focus {
     outline: 1px solid rgba(#fff, 0.3);
@@ -147,10 +149,8 @@
   }
 }
 
-// Greeting box
-
 .hero-box {
-  height: 90vh;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -161,6 +161,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 1rem;
 
   &__desc {
     font-weight: 400;
@@ -179,7 +180,6 @@
 
 .btn-main {
   padding: 1rem 3rem;
-  margin: 1.8rem 8px;
   border-radius: 0;
 }
 
