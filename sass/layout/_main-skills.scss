@@ -1,0 +1,73 @@
+// Level Up
+
+.last-try {
+  max-width: 100vw;
+  height: 30vh;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.last-text {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-white) 25%,
+    var(--color-white) 75%,
+    transparent
+  );
+  opacity: 40%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear both;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
+
+.skbar {
+  animation: skyrim 6s linear both 1s;
+}
+
+@keyframes skyrim {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
