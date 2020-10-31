@@ -7181,21 +7181,22 @@ body {
 .header {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(13, 12, 22, 0.85), rgba(1, 0, 8, 0.85)), url(/img/hero-md.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hero-md.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: 75% 50%; }
   @media (max-width: 540px) {
     .header {
-      background-image: linear-gradient(rgba(13, 12, 22, 0.85), rgba(1, 0, 8, 0.85)), url(/img/hero-sm.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hero-sm.jpg); } }
   @media (min-resolution: 192dpi) and (min-width: 540px), (min-width: 2000px) {
     .header {
-      background-image: linear-gradient(rgba(13, 12, 22, 0.85), rgba(1, 0, 8, 0.85)), url(/img/hero-xl.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hero-xl.jpg); } }
 
 .main-nav {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  z-index: 10; }
 
 .nav-border {
   padding-top: auto; }
@@ -7219,8 +7220,8 @@ body {
     margin-left: 1rem; } }
 
 .navbar-brand img {
-  width: 60px;
-  height: 60px; }
+  width: 48px;
+  height: 48px; }
 
 .navbar-toggler {
   border: none; }
@@ -7303,6 +7304,9 @@ body {
 
 .about-me {
   height: 80rem; }
+
+.work {
+  background: linear-gradient(-70deg, #f0f4f8 50%, #d9e2ec 50%); }
 
 header {
   font-weight: 800; }
