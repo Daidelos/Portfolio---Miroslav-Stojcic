@@ -85,9 +85,10 @@
   <div class="main container-fluid work">
     <div class="container">
       <div class="row justify-content-around align-items-end py-5">
+
         <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3">
-          <img src="/img/icon-custom-made.svg" alt="">
-          <h5 class="p-3 pt-5">Custom-made</h5>
+          <img src="/img/icon-reliable.svg" alt="">
+          <h5 class="p-3 pt-5">Reliability</h5>
           <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis dicta maiores
             minima ipsam optio.
           </p>
@@ -100,22 +101,72 @@
           </p>
         </div>
         <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3">
-          <img src="/img/icon-reliable.svg" alt="">
-          <h5 class="p-3 pt-5">Reliability</h5>
+          <img src="/img/icon-custom-made.svg" alt="">
+          <h5 class="p-3 pt-5">Custom-made</h5>
           <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis dicta maiores
             minima ipsam optio.
           </p>
         </div>
+
       </div>
     </div>
 
   </div>
 
-  <section class="about-me">
-    <h3 class="more-about-me">About me</h3>
-  </section>
+
+  <!-- Footer -->
+
+  <div class="container">
+    <div class="form-container p-5 my-5">
+      <div class="form-fill">
+        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <h4 class="h1 py-4">Contact me:</h4>
+          <p>
+            <label class="form-text">Your Name: <input type="text" name="name" class="form-control" required /></label>
+          </p>
+          <p>
+            <label class="form-text">Your Email: <input type="email" name="email" class="form-control"
+                required /></label>
+          </p>
+          <p>
+            <label class="form-text">Message: <textarea name="message" class="form-control" rows="4"
+                required></textarea></label>
+          </p>
+          <p>
+            <button type="submit" class="btn btn-form form-control mt-2">Send</button>
+          </p>
+      </div>
+      </form>
+    </div>
+  </div>
 
 
+
+  <footer class="footer container-fluid">
+
+    <div class="row py-2">
+      <div class="col-md-2 order-md-2">
+        <div class="footer__logo-box text-center py-3">
+          <img src="/img/logo-w.svg" alt="Full logo" class="footer__logo">
+        </div>
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center order-md-1">
+        <ul class="footer__list d-flex justify-content-center align-items-center">
+          <li class="footer__item p-2"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item p-2"><a href="#" class="footer__link">About me</a></li>
+          <li class="footer__item p-2"><a href="#" class="footer__link">Services</a></li>
+          <li class="footer__item p-2"><a href="#" class="footer__link">Contact me</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 d-flex align-items-center order-md-3">
+        <p class="footer__copyright">Copyright &copy; by Miroslav Stojcic</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts  -->
 
