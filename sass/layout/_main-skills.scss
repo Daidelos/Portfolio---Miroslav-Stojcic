@@ -1,38 +1,99 @@
-// Level Up
+// About me section
 
-.last-try {
-  max-width: 100vw;
-  height: 30vh;
-  margin-top: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.about-me {
+  &__box {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    flex-direction: column;
+
+    @include respond(lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__lvl {
+    position: relative;
+  }
+
+  &__img {
+    width: 356px;
+  }
+
+  &__title {
+    color: var(--color-teal-med);
+  }
+
+  &__text {
+    color: #102a43;
+    line-height: 1.8;
+  }
 }
 
-.last-text {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-white) 25%,
-    var(--color-white) 75%,
-    transparent
-  );
-  opacity: 40%;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 6s linear both;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+//Joystick background icon
+
+.joystick {
+  position: absolute;
+  top: 42%;
+  right: -8%;
+
+  z-index: -1;
+  width: 50%;
+  opacity: 0.2;
+
+  @include respond(lg) {
+    top: -15%;
+    right: -9%;
+    width: 30%;
+    opacity: 0.25;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Level Up
+
+.lvlup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  //check this height, it was 10rem !!!
+
+  height: 100%;
+
+  &__text {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    overflow: hidden;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-white) 25%,
+      var(--color-white) 75%,
+      transparent
+    );
+    opacity: 60%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 16s linear both infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
 }
 
 @keyframes animate {
   0% {
+    background-position: -500%;
+  }
+
+  50% {
     background-position: -500%;
   }
 
@@ -42,7 +103,7 @@
 }
 
 .skbar {
-  animation: skyrim 6s linear both 1s;
+  animation: skyrim 16s linear both 1s infinite;
 }
 
 @keyframes skyrim {
@@ -50,24 +111,24 @@
     opacity: 0;
   }
 
-  10% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 0.4;
-  }
   50% {
-    opacity: 0.4;
+    opacity: 0;
   }
+  65% {
+    opacity: 0.6;
+  }
+
   75% {
-    opacity: 0.4;
+    opacity: 0.6;
   }
 
   90% {
-    opacity: 0.2;
+    opacity: 0;
   }
 
   to {
     opacity: 0;
   }
 }
+
+////////////////////////////////////////////////////////////////////////

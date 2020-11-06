@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <title>Miroslav Stojcic</title>
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> -->
 </head>
@@ -25,7 +28,8 @@
     <div class="container-fluid main-nav nav-border navbar-fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark ">
-          <span class="navbar-brand"><img src="/img/logo-w.svg" alt="Miroslav Stojcic Logo"></span>
+          <span class="navbar-brand"><img class="navbar-brand__img" src="/img/logo-w.svg"
+              alt="Miroslav Stojcic Logo"></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +44,7 @@
               <a class="nav-link px-lg-3" href="#">Contact me</a>
             </div>
 
-            <div class="nav-icons ml-auto">
+            <div class="nav-icons  d-flex flex-direction-row ml-auto">
               <a px-lg-3 class="nav-link upwork" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
                 target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -52,120 +56,177 @@
               <a class=" nav-link px-lg-3 social-icons" href="#"><i class="fab fa-github"></i></a>
               <a class="nav-link px-lg-3 social-icons" href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-
           </div>
         </nav>
       </div>
     </div>
 
-    <!-- Level Up Easter Egg  -->
-
-    <!-- <div class="last-try">
-
-      <pre class="last-text">               Web Development leveled up               </pre>
-
-      <div last-bar>
-        <img src="/img/skyrim-level-bar.svg" alt="level" class="skbar">
-      </div>
-    </div> -->
-
     <div class="container hero-box">
-      <div class="row greet-box">
-        <h1 class="greet-box__main">Hi, I'm <span class="greet-box__name">Mickey</span>
-          <p class="greet-box__desc d-block name-typing">and I'm a freelance web developer.</p>
+      <div class="row greet-box" data-aos="fade-right" data-aos-duration="1800">
+        <h1 class="greet-box__main">Hi, I'm <span class=" greet-box__name">Mickey</span>
+          <span class="greet-box__desc d-block name-typing">I'm a freelance web developer and web designer based in
+            Prague.
+          </span>
         </h1>
-
         <button type="button" class="btn btn-lg btn-outline-light d-block btn-main">Contact me</button>
-
       </div>
     </div>
 
   </header>
 
-  <div class="main container-fluid work">
-    <div class="container">
-      <div class="row justify-content-around align-items-end py-5">
+  <!-- ------------------------------------------------ -->
 
-        <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3">
-          <img src="/img/icon-reliable.svg" alt="">
-          <h5 class="p-3 pt-5">Reliability</h5>
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis dicta maiores
-            minima ipsam optio.
-          </p>
-        </div>
-        <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3">
-          <img src="/img/icon-responsive.svg" alt="">
-          <h5 class="p-3 pt-5">Responsiveness</h5>
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis dicta maiores
-            minima ipsam optio.
-          </p>
-        </div>
-        <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3">
-          <img src="/img/icon-custom-made.svg" alt="">
-          <h5 class="p-3 pt-5">Custom-made</h5>
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis dicta maiores
-            minima ipsam optio.
-          </p>
+  <!-- Main -->
+
+  <main class="main">
+
+    <!-- About me section -->
+
+    <section class="about-me container-fluid" data-aos="fade-up" data-aos-duration="1000">
+      <div class="about-me__box container d-flex align-items-center my-5">
+        <div class="about-me__lvl">
+
+          <img class="about-me__img" src="/img/hero-sm.jpg" alt="Profile picture of Mickey">
+
+          <!-- Level Up Easter Egg  -->
+
+          <div class="lvlup d-flex flex-column justify-content-center align-items-center">
+            <pre class="lvlup__text">               Level up               </pre>
+            <div>
+              <img src="/img/skyrim-level-bar.svg" alt="level-bar-from-skyrim" class="skbar">
+            </div>
+          </div>
         </div>
 
+        <!-- ------------------------------------ -->
+
+        <div class="about-me__text m-5 p-5">
+          <h4 class=" about-me__title h1 pb-4">About me</h4>
+          <img class="joystick" src="/img/joystick.svg" alt="Icon of joystick">
+          <p class="pr-4">I am a passionate front-end web developer and enthusiast web designer based in Prague. I enjoy
+            building responsive static websites, landing pages, personal portfolio webpages, bringing wireframes,
+            mockups and prototypes to life, designing logos.</p>
+          <p class="pr-4">I am a former chef and admirer of beautiful food, also a huge video game nerd and a hobbyist
+            photographer.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <!-- Services -->
 
+    <section class="services">
+      <div class="main container-fluid work">
+        <div class="container">
+          <div class="row justify-content-around align-items-end py-5">
+
+
+            <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3"
+              data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">
+              <img src="/img/icon-responsive.svg" alt="Monitor, tablet and phone symbolising responsiveness">
+              <h5 class="p-3 pt-5 cards-title">Responsiveness</h5>
+              <p class="text-center cards-text">Websites that will work on any device, big or small.
+              </p>
+            </div>
+
+            <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3"
+              data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <img src="/img/icon-custom-made.svg"
+                alt="Monitor with a ruler and a pencil, symbolising custom-made design">
+              <h5 class="p-3 pt-5 cards-title">Custom-made</h5>
+              <p class="text-center cards-text">Built from scratch and customized to suit your needs.
+              </p>
+            </div>
+
+            <div class="col-md-4 p-4 d-flex flex-column justify-content-center align-items-center my-3"
+              data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true">
+              <img src="/img/icon-reliable.svg" alt="Monitor with shield and clock icon, symbolizing reliability">
+              <h5 class="p-3 pt-5 cards-title">Reliability</h5>
+              <p class="text-center cards-text">Quality and consistency of work, around the clock.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- -->
+
+    <!-- Contact me -->
+
+    <section class="contact-me">
+      <div class="container p-0" data-aos="fade-right" data-aos-duration="1000">
+        <div class="form-container p-5 my-5">
+          <div class="form-fill">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              <h4 class="h1 py-4">Contact me</h4>
+              <p>
+                <label class="form-text">Name: <input type="text" name="name" class="form-control" required /></label>
+              </p>
+              <p>
+                <label class="form-text">Email: <input type="email" name="email" class="form-control"
+                    required /></label>
+              </p>
+              <p>
+                <label class="form-text">Message: <textarea name="message" class="form-control" rows="4"
+                    required></textarea></label>
+              </p>
+              <p>
+                <button type="submit" class="btn btn-form form-control mt-2">Send</button>
+              </p>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ------------------------------------------------------------------------------------------ -->
 
   <!-- Footer -->
 
-  <div class="container">
-    <div class="form-container p-5 my-5">
-      <div class="form-fill">
-        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-          <h4 class="h1 py-4">Contact me:</h4>
-          <p>
-            <label class="form-text">Your Name: <input type="text" name="name" class="form-control" required /></label>
-          </p>
-          <p>
-            <label class="form-text">Your Email: <input type="email" name="email" class="form-control"
-                required /></label>
-          </p>
-          <p>
-            <label class="form-text">Message: <textarea name="message" class="form-control" rows="4"
-                required></textarea></label>
-          </p>
-          <p>
-            <button type="submit" class="btn btn-form form-control mt-2">Send</button>
-          </p>
-      </div>
-      </form>
-    </div>
-  </div>
-
-
-
   <footer class="footer container-fluid">
+    <div class="container">
+      <div class="row py-2">
+        <div class="col-lg-2 order-lg-2">
+          <div class="footer__logo-box text-center py-3">
+            <img src="/img/logo-w.svg" alt="Full logo" class="footer__logo">
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center align-items-center order-lg-1">
+          <ul class="footer__list d-flex justify-content-center align-items-center">
+            <li class="footer__item px-2"><a href="#" class="footer__link">Home</a></li>
+            <li class="footer__item px-2"><a href="#" class="footer__link">About me</a></li>
+            <li class="footer__item px-2"><a href="#" class="footer__link">Services</a></li>
+            <li class="footer__item px-2"><a href="#" class="footer__link">Contact me</a></li>
+          </ul>
+        </div>
 
-    <div class="row py-2">
-      <div class="col-md-2 order-md-2">
-        <div class="footer__logo-box text-center py-3">
-          <img src="/img/logo-w.svg" alt="Full logo" class="footer__logo">
+        <div class="col-lg-5 d-flex justify-content-center align-items-center order-lg-3">
+          <div class="nav-icons d-flex flex-direction-row">
+            <a px-lg-3 class="footer__icons p-3" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
+              target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1379 8.68544C15.2122 8.68544 14.3445 8.29608 13.5557 7.66245L13.7473 6.76537L13.754 6.73035C13.9279 5.7774 14.4671 4.17915 16.1387 4.17915C16.7408 4.17959 17.318 4.41716 17.7437 4.83969C18.1695 5.26222 18.4088 5.83516 18.4093 6.43271C18.4081 7.03012 18.1684 7.60272 17.7427 8.025C17.3169 8.44728 16.7398 8.68477 16.1379 8.68544ZM16.1379 1.89891C14.0051 1.89891 12.3495 3.27373 11.6775 5.53896C10.6527 4.0099 9.87318 2.17404 9.42042 0.626648H7.12218V6.5561C7.12151 7.11916 6.89592 7.65898 6.49486 8.0572C6.09379 8.45543 5.55 8.67955 4.9827 8.68043C4.41563 8.67933 3.87213 8.45508 3.47139 8.05686C3.07064 7.65864 2.84535 7.11894 2.8449 6.5561V0.626648H0.546661V6.5561C0.546661 8.98558 2.53746 10.9773 4.9827 10.9773C7.42962 10.9773 9.42042 8.98558 9.42042 6.5561V5.56397C9.86478 6.4869 10.4133 7.42234 11.0786 8.2494L9.67326 14.8133H12.0227L13.0417 10.0527C13.9346 10.6188 14.9611 10.9773 16.1379 10.9773C18.6579 10.9773 20.7067 8.93305 20.7067 6.43354C20.7067 3.93237 18.6579 1.89891 16.1379 1.89891Z"
+                  fill="#87eaf2" />
+              </svg>
+            </a>
+            <a class=" footer__icons py-3 px-4" href="#"><i class="fab fa-github"></i></a>
+            <a class="footer__icons py-3 px-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
         </div>
       </div>
-      <div class="col-md-5 d-flex justify-content-center align-items-center order-md-1">
-        <ul class="footer__list d-flex justify-content-center align-items-center">
-          <li class="footer__item p-2"><a href="#" class="footer__link">Home</a></li>
-          <li class="footer__item p-2"><a href="#" class="footer__link">About me</a></li>
-          <li class="footer__item p-2"><a href="#" class="footer__link">Services</a></li>
-          <li class="footer__item p-2"><a href="#" class="footer__link">Contact me</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 d-flex align-items-center order-md-3">
-        <p class="footer__copyright">Copyright &copy; by Miroslav Stojcic</p>
-      </div>
     </div>
+    <p class="footer__copyright text-center">Copyright &copy; by Miroslav Stojcic</p>
+
   </footer>
 
   <!-- Scripts  -->
@@ -180,6 +241,11 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script>
     $(function () {
       $(document).scroll(function () {
@@ -188,6 +254,7 @@
       });
     });
   </script>
+
 
 </body>
 

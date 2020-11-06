@@ -5,11 +5,6 @@
   &__logo {
     width: 100px;
     height: 100px;
-
-    @include respond(lg) {
-      width: 128px;
-      height: 128px;
-    }
   }
 
   &__list {
@@ -23,12 +18,29 @@
     text-transform: uppercase;
     font-size: 12px;
     color: #87eaf2;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &__copyright {
-    margin: 0 auto;
+    padding: 12px;
     font-size: 12px;
+    margin: 0 -15px;
     color: #bcccdc;
+    background-color: #01171a;
+  }
+
+  &__icons {
+    color: #87eaf2;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #87eaf2;
+      transform: translateY(-10%);
+    }
   }
 }
 
@@ -36,7 +48,7 @@
   border-top: 10px solid var(--color-teal-med);
   background: linear-gradient(
       -70deg,
-      rgba(0, 0, 0, 0) 40%,
+      rgba(14, 124, 134, 0.4) 40%,
       rgba(255, 255, 255, 1) 40.2%
     ),
     url(/img/hero-md.jpg);

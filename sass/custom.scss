@@ -22,12 +22,8 @@ $font-family: 'Montserrat', sans-serif;
 // @import 'base/typography';
 // @import 'base/utilities';
 @import 'layout/header';
-// @import 'layout/main-skills';
+@import 'layout/main-skills';
 // @import 'layout/portfolio';
 @import 'layout/footer';
 // @import 'components/carousel';
 // @import 'components/social-proof';
-
-header {
-  font-weight: 800;
-}
