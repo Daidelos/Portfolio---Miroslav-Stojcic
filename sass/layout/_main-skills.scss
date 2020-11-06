@@ -132,3 +132,82 @@
 }
 
 ////////////////////////////////////////////////////////////////////////
+
+.work {
+  height: 100%;
+  width: 100%;
+
+  // background: linear-gradient(-70deg, #fff 50%, #f0f4f8 50%);
+}
+
+.cards-title {
+  color: var(--color-teal-med);
+  font-weight: 500;
+}
+
+.cards-text {
+  color: #102a43;
+}
+
+// Projects
+
+.projects {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__title {
+    color: #102a43;
+  }
+}
+
+.copywriter {
+  flex-direction: column;
+  border-top: 10px solid var(--color-teal-med);
+
+  @include respond(lg) {
+    flex-direction: row;
+  }
+
+  &__title {
+    color: var(--color-teal-med);
+  }
+
+  &__desc {
+    max-width: 100%;
+
+    @include respond(lg) {
+      width: 40%;
+    }
+
+    p {
+      color: #102a43;
+    }
+  }
+
+  &__mockup {
+    width: 100%;
+
+    @include respond(lg) {
+      width: 60%;
+    }
+  }
+}
+
+.btn-visit {
+  background-color: var(--color-teal-med);
+  width: 50%;
+  align-self: start;
+  border-radius: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-read {
+  border: 2px solid var(--color-teal-med);
+  align-self: start;
+  width: 50%;
+  border-radius: 0;
+  color: var(--color-teal-med);
+  font-weight: 500;
+}
