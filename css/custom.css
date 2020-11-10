@@ -7171,6 +7171,28 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 */
+@keyframes animate {
+  0% {
+    background-position: -500%; }
+  50% {
+    background-position: -500%; }
+  100% {
+    background-position: 500%; } }
+
+@keyframes skyrim {
+  from {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  65% {
+    opacity: 0.8; }
+  85% {
+    opacity: 0.8; }
+  90% {
+    opacity: 0; }
+  to {
+    opacity: 0; } }
+
 :root {
   --color-white: #f5f5f7;
   --color-gray-light: #959595;
@@ -7185,7 +7207,8 @@ body {
   background: linear-gradient(-70deg, #f0f4f8 50%, #d9e2ec 50.05%); }
 
 .hidden {
-  display: none; }
+  display: none;
+  visibility: hidden; }
 
 .header {
   max-width: 100vw;
@@ -7330,10 +7353,17 @@ body {
       flex-direction: row; } }
 
 .about-me__lvl {
-  position: relative; }
+  position: relative;
+  order: 2;
+  transform: translateY(-34px); }
+  @media (min-width: 992px) {
+    .about-me__lvl {
+      order: 0;
+      transform: translateY(0); } }
 
 .about-me__img {
-  width: 356px; }
+  width: 300px;
+  box-shadow: 12px 12px 0 var(--color-teal-med); }
 
 .about-me__title {
   color: var(--color-teal-med); }
@@ -7344,7 +7374,7 @@ body {
 
 .joystick {
   position: absolute;
-  top: 42%;
+  top: -5%;
   right: -8%;
   z-index: -1;
   width: 50%;
@@ -7370,37 +7400,15 @@ body {
     font-weight: 700;
     overflow: hidden;
     background: linear-gradient(90deg, transparent, var(--color-white) 25%, var(--color-white) 75%, transparent);
-    opacity: 60%;
+    opacity: 98%;
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 16s linear both infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0); }
 
-@keyframes animate {
-  0% {
-    background-position: -500%; }
-  50% {
-    background-position: -500%; }
-  100% {
-    background-position: 500%; } }
-
 .skbar {
   animation: skyrim 16s linear both 1s infinite; }
-
-@keyframes skyrim {
-  from {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  65% {
-    opacity: 0.6; }
-  75% {
-    opacity: 0.6; }
-  90% {
-    opacity: 0; }
-  to {
-    opacity: 0; } }
 
 .work {
   height: 100%;

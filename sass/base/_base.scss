@@ -21,7 +21,6 @@
   // --line: 1px solid var(--color-grey-light-2);
 }
 
-// background-color: var(--color-grey-light-2);
 html {
   scroll-behavior: smooth;
 }
@@ -33,4 +32,5 @@ body {
 
 .hidden {
   display: none;
+  visibility: hidden;
 }

@@ -44,18 +44,18 @@
             </div>
 
             <div class="nav-icons  d-flex flex-direction-row ml-auto">
-              <a px-lg-3 class="nav-link upwork" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
-                target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+              <a class="nav-link upwork px-lg-3" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
+                target="_blank" aria-label="Link to Upwork profile"><svg width="21" height="15" viewBox="0 0 21 15"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.1379 8.68544C15.2122 8.68544 14.3445 8.29608 13.5557 7.66245L13.7473 6.76537L13.754 6.73035C13.9279 5.7774 14.4671 4.17915 16.1387 4.17915C16.7408 4.17959 17.318 4.41716 17.7437 4.83969C18.1695 5.26222 18.4088 5.83516 18.4093 6.43271C18.4081 7.03012 18.1684 7.60272 17.7427 8.025C17.3169 8.44728 16.7398 8.68477 16.1379 8.68544ZM16.1379 1.89891C14.0051 1.89891 12.3495 3.27373 11.6775 5.53896C10.6527 4.0099 9.87318 2.17404 9.42042 0.626648H7.12218V6.5561C7.12151 7.11916 6.89592 7.65898 6.49486 8.0572C6.09379 8.45543 5.55 8.67955 4.9827 8.68043C4.41563 8.67933 3.87213 8.45508 3.47139 8.05686C3.07064 7.65864 2.84535 7.11894 2.8449 6.5561V0.626648H0.546661V6.5561C0.546661 8.98558 2.53746 10.9773 4.9827 10.9773C7.42962 10.9773 9.42042 8.98558 9.42042 6.5561V5.56397C9.86478 6.4869 10.4133 7.42234 11.0786 8.2494L9.67326 14.8133H12.0227L13.0417 10.0527C13.9346 10.6188 14.9611 10.9773 16.1379 10.9773C18.6579 10.9773 20.7067 8.93305 20.7067 6.43354C20.7067 3.93237 18.6579 1.89891 16.1379 1.89891Z"
                     fill="#f5f5f7" />
                 </svg>
               </a>
-              <a class=" nav-link px-lg-3 social-icons" href="https://github.com/Daidelos" target="_blank"><i
-                  class="fab fa-github"></i></a>
+              <a class="nav-link px-lg-3 social-icons" href="https://github.com/Daidelos" target="_blank"
+                aria-label="Link to Github profile"><i class="fab fa-github"></i></a>
               <a class="nav-link px-lg-3 social-icons" href="https://www.linkedin.com/in/miroslav-stojcic-3a354a4b/"
-                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                target="_blank" aria-label="Link to Linkedin profile"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </nav>
@@ -69,7 +69,8 @@
             Prague.
           </span>
         </h1>
-        <button type="button" class="btn btn-lg btn-outline-light d-block btn-main">Contact me</button>
+        <a href="#contactMe" role="button" class="btn btn-lg btn-outline-light d-block btn-main"
+          aria-label="Link to contact form section">Contact me</a>
       </div>
     </div>
 
@@ -85,15 +86,14 @@
 
     <section class="about-me container-fluid pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
       id="aboutMe">
-      <div class="about-me__box container d-flex align-items-center my-5">
-        <div class="about-me__lvl">
+      <div class="about-me__box container d-flex align-items-center p-lg-5 my-5">
+        <div class="about-me__lvl p-3">
 
-          <img class="about-me__img" src="/img/dark_road_forest-wallpaper-1920x1080.jpg"
-            alt="Profile picture of Mickey">
+          <img class="about-me__img" src="/img/profileXL.jpg" alt="Profile picture of Mickey">
 
           <!-- Level Up Easter Egg  -->
 
-          <div class="lvlup d-flex flex-column justify-content-center align-items-center">
+          <div class="lvlup d-flex flex-column justify-content-center align-items-center" aria-hidden="true">
             <pre class="lvlup__text">               Ready to Level up               </pre>
             <div>
               <img src="/img/skyrim-level-bar.svg" alt="level-bar-from-skyrim" class="skbar">
@@ -103,17 +103,18 @@
 
         <!-- ------------------------------------ -->
 
-        <div class="about-me__text m-md-5 p-5">
+        <div class="about-me__text mx-md-5 mt-md-3 p-5">
           <h4 class=" about-me__title h2 pb-4">About me</h4>
-          <img class="joystick" src="/img/joystick.svg" alt="Icon of joystick">
-          <p class="pr-4">I am a passionate front-end web developer and enthusiast web designer based in Prague. I enjoy
+          <p>I am a passionate front-end web developer and enthusiast web designer based in Prague. I enjoy
             building responsive static websites, landing pages, personal portfolio webpages, bringing wireframes,
             mockups and prototypes to life and designing logos.</p>
           <p>I strive for simplicity, clean and elegant design and code, and user-friendly experience.</p>
-          <p class="pr-4">I am a former chef and admirer of beautiful food, also a huge video game nerd and a hobbyist
+          <p>I am a former chef and admirer of beautiful food, also a huge video game nerd and a hobbyist
             photographer.
           </p>
         </div>
+        <img class="joystick" src="/img/joystick.svg" alt="Icon of joystick">
+
       </div>
     </section>
 
@@ -176,10 +177,13 @@
             testimonials carousel, modals and scrollspy.</p>
 
           <div class="btn-wrapper">
-            <a class="btn btn-visit d-block mt-4 py-2" href="https://draganadrobnjak.com" role="button"
-              target="_blank">Visit
+            <a class="btn btn-visit d-block mt-4 py-2" href="https://draganadrobnjak.com" role="button" target="_blank"
+              aria-label="Link to copywriter portfolio website">Visit
               Website</a>
-            <a class="btn btn-read d-block mt-4 py-2" href="#" role="button" target="_blank">Read More</a>
+            <a class="btn btn-read d-block mt-4 py-2" href="#" role="button" target="_blank"
+              aria-label="Open a popup to read more about the process">Read More</a>
+
+            <!-- Revisit popup!!! -->
           </div>
 
 
@@ -193,7 +197,7 @@
 
     </section>
 
-    <!-- Contact me -->
+    <!-- Contact me form-->
 
     <section class="contact-me" id="contactMe">
       <div class="container p-0" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
@@ -250,17 +254,17 @@
         <div class="col-lg-5 d-flex justify-content-center align-items-center order-lg-3">
           <div class="nav-icons d-flex flex-direction-row">
             <a px-lg-3 class="footer__icons p-3" href="https://www.upwork.com/freelancers/~012a5f2bb5bcc4ef31"
-              target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              target="_blank" aria-label="Link to Upwork profile"><svg width="21" height="15" viewBox="0 0 21 15"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.1379 8.68544C15.2122 8.68544 14.3445 8.29608 13.5557 7.66245L13.7473 6.76537L13.754 6.73035C13.9279 5.7774 14.4671 4.17915 16.1387 4.17915C16.7408 4.17959 17.318 4.41716 17.7437 4.83969C18.1695 5.26222 18.4088 5.83516 18.4093 6.43271C18.4081 7.03012 18.1684 7.60272 17.7427 8.025C17.3169 8.44728 16.7398 8.68477 16.1379 8.68544ZM16.1379 1.89891C14.0051 1.89891 12.3495 3.27373 11.6775 5.53896C10.6527 4.0099 9.87318 2.17404 9.42042 0.626648H7.12218V6.5561C7.12151 7.11916 6.89592 7.65898 6.49486 8.0572C6.09379 8.45543 5.55 8.67955 4.9827 8.68043C4.41563 8.67933 3.87213 8.45508 3.47139 8.05686C3.07064 7.65864 2.84535 7.11894 2.8449 6.5561V0.626648H0.546661V6.5561C0.546661 8.98558 2.53746 10.9773 4.9827 10.9773C7.42962 10.9773 9.42042 8.98558 9.42042 6.5561V5.56397C9.86478 6.4869 10.4133 7.42234 11.0786 8.2494L9.67326 14.8133H12.0227L13.0417 10.0527C13.9346 10.6188 14.9611 10.9773 16.1379 10.9773C18.6579 10.9773 20.7067 8.93305 20.7067 6.43354C20.7067 3.93237 18.6579 1.89891 16.1379 1.89891Z"
                   fill="#87eaf2" />
               </svg>
             </a>
-            <a class=" footer__icons py-3 px-4" href="https://github.com/Daidelos" target="_blank"><i
-                class="fab fa-github"></i></a>
+            <a class=" footer__icons py-3 px-4" href="https://github.com/Daidelos" target="_blank"
+              aria-label="Link to Github profile"><i class="fab fa-github"></i></a>
             <a class="footer__icons py-3 px-4" href="https://www.linkedin.com/in/miroslav-stojcic-3a354a4b/"
-              target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              target="_blank" aria-label="Link to Linkedin profile"><i class="fab fa-linkedin-in"></i></a>
           </div>
 
         </div>
