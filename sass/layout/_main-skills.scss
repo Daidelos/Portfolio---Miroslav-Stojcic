@@ -164,7 +164,12 @@
 .copywriter {
   flex-direction: column;
   border-top: 10px solid var(--color-teal-med);
+  margin-left: 15px;
+  margin-right: 15px;
 
+  @include respond(sm) {
+    margin: 0;
+  }
   @include respond(lg) {
     flex-direction: row;
   }
@@ -194,6 +199,11 @@
   }
 }
 
+.btn-wrapper {
+  display: flex;
+  box-sizing: content-box;
+}
+
 .btn-visit {
   background-color: var(--color-teal-med);
   width: 50%;
@@ -201,13 +211,24 @@
   border-radius: 0;
   color: white;
   font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #14919b;
+    color: white;
+  }
 }
 
 .btn-read {
-  border: 2px solid var(--color-teal-med);
   align-self: start;
   width: 50%;
   border-radius: 0;
   color: var(--color-teal-med);
   font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgba($color: #0e7c86, $alpha: 0.1);
+    color: var(--color-teal-med);
+  }
 }
