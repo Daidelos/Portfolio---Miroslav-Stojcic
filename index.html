@@ -26,8 +26,8 @@
 
     <!-- Navbar  -->
     <div class="container-fluid main-nav nav-border navbar-fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+      <div class="container px-md-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-md-0" id="main-nav">
           <span class="navbar-brand"><img class="navbar-brand__img" src="/img/logo-w.svg"
               alt="Miroslav Stojcic Logo"></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -37,10 +37,10 @@
           <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
             <div class="navbar-nav ml-auto">
-              <a class="nav-link px-lg-3 active" href="#home">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-link px-lg-3" href="#aboutMe">About me</a>
-              <a class="nav-link px-lg-3" href="#portfolio">Portfolio</a>
-              <a class="nav-link px-lg-3" href="#contactMe">Contact me</a>
+              <a class="nav-link px-lg-3 nav-head-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link px-lg-3 nav-head-link" href="#aboutMe">About me</a>
+              <a class="nav-link px-lg-3 nav-head-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link px-lg-3 nav-head-link" href="#contactMe">Contact me</a>
             </div>
 
             <div class="nav-icons  d-flex flex-direction-row ml-auto">
@@ -66,10 +66,10 @@
       <div class="row greet-box" data-aos="fade-right" data-aos-duration="1800">
         <h1 class="greet-box__main">Hi, I'm <span class=" greet-box__name">Mickey</span>
           <span class="greet-box__desc d-block name-typing">I'm a freelance web developer and web designer based in
-            Prague.
+            Prague, Czech Republic.
           </span>
         </h1>
-        <a href="#contactMe" role="button" class="btn btn-lg btn-outline-light d-block btn-main"
+        <a href="#contactMe" role="button" class="btn btn-lg d-block btn-main mt-3"
           aria-label="Link to contact form section">Contact me</a>
       </div>
     </div>
@@ -88,8 +88,11 @@
       id="aboutMe">
       <div class="about-me__box container d-flex align-items-center p-lg-5 my-5">
         <div class="about-me__lvl p-3">
-
-          <img class="about-me__img" src="/img/profileXL.jpg" alt="Profile picture of Mickey">
+          <picture>
+            <source media="(max-width: 991px)" srcset="/img/profile-sm.jpg">
+            <source media="(min-width: 992px)" srcset="/img/profileXL.jpg">
+            <img class="about-me__img" src="/img/profileXL.jpg" alt="Profile picture of Mickey">
+          </picture>
 
           <!-- Level Up Easter Egg  -->
 
@@ -103,7 +106,7 @@
 
         <!-- ------------------------------------ -->
 
-        <div class="about-me__text mx-md-5 mt-md-3 p-5">
+        <div class="about-me__text mx-md-5 mt-md-3 p-4 p-sm-5">
           <h4 class=" about-me__title h2 pb-4">About me</h4>
           <p>I am a passionate front-end web developer and enthusiast web designer based in Prague. I enjoy
             building responsive static websites, landing pages, personal portfolio webpages, bringing wireframes,
@@ -167,8 +170,8 @@
       <h4 class="projects__title h2 pb-5 px-5 text-center" data-aos="fade-up" data-aos-duration="1000"
         data-aos-once="true">My projects (work in progress)</h4>
       <div class="copywriter d-flex bg-white">
-        <div class="copywriter__desc d-flex flex-column justify-content-center p-5 pr-lg-0 m-md-5" data-aos="fade-right"
-          data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+        <div class="copywriter__desc d-flex flex-column justify-content-center p-4 p-sm-5 pr-lg-0 m-md-5"
+          data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
           <h5 class="h3 pb-4 copywriter__title">Copywriter Portfolio</h5>
           <p>Portfolio webpage for a freelance copywriter. An elegant and simple responsive website
             showcasing persona, services, some of the work and contact. The theme of the website was light, airy and
@@ -180,10 +183,9 @@
             <a class="btn btn-visit d-block mt-4 py-2" href="https://draganadrobnjak.com" role="button" target="_blank"
               aria-label="Link to copywriter portfolio website">Visit
               Website</a>
-            <a class="btn btn-read d-block mt-4 py-2" href="#" role="button" target="_blank"
-              aria-label="Open a popup to read more about the process">Read More</a>
-
-            <!-- Revisit popup!!! -->
+            <a class="btn btn-read d-block mt-4 py-2" href="https://github.com/Daidelos/Copywriter-Portfolio"
+              role="button" target="_blank" aria-label="Open a popup to read more about the process">Visit Github
+            </a>
           </div>
 
 
@@ -207,7 +209,7 @@
               <p class="hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
               </p>
-              <h4 class="h1 py-4">Contact me</h4>
+              <h4 class="h1 py-4">Get in touch</h4>
               <p>
                 <label class="form-text">Name: <input type="text" name="name" class="form-control" required /></label>
               </p>
@@ -244,10 +246,10 @@
         </div>
         <div class="col-lg-5 d-flex justify-content-center align-items-center order-lg-1">
           <ul class="footer__list d-flex justify-content-center align-items-center">
-            <li class="footer__item px-2"><a href="#home" class="footer__link">Home</a></li>
-            <li class="footer__item px-2"><a href="#aboutMe" class="footer__link">About me</a></li>
-            <li class="footer__item px-2"><a href="#portfolio" class="footer__link">My Projects</a></li>
-            <li class="footer__item px-2"><a href="#contactMe" class="footer__link">Contact me</a></li>
+            <li class="footer__item px-1 px-sm-2"><a href="#home" class="footer__link">Home</a></li>
+            <li class="footer__item px-1 px-sm-2"><a href="#aboutMe" class="footer__link">About me</a></li>
+            <li class="footer__item px-1 px-sm-2"><a href="#portfolio" class="footer__link">My Projects</a></li>
+            <li class="footer__item px-1 px-sm-2"><a href="#contactMe" class="footer__link">Contact me</a></li>
           </ul>
         </div>
 
@@ -290,6 +292,8 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- Nav background color when scrolled down -->
 
   <script>
     $(function () {
