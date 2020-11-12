@@ -200,26 +200,51 @@
 
 .btn-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-sizing: content-box;
+
+  @include respond(sm) {
+    flex-direction: row;
+  }
+
+  @include respond(lg) {
+    flex-direction: column;
+  }
 }
 
 .btn-visit {
-  width: 48%;
+  width: 100%;
   align-self: start;
   border: 1px solid var(--color-teal-med);
+
+  @include respond(sm) {
+    width: 48%;
+  }
+
+  @include respond(lg) {
+    width: 100%;
+  }
 }
 
 .btn-git {
   align-self: start;
-  width: 48%;
+  width: 100%;
   background-color: transparent;
   border: 1px solid var(--color-teal-med);
 
   color: var(--color-teal-med);
   font-weight: 500;
   text-transform: uppercase;
+
+  @include respond(sm) {
+    width: 48%;
+  }
+
+  @include respond(lg) {
+    width: 100%;
+  }
 
   &:hover {
     background-color: rgba($color: #4ca5ad, $alpha: 0.1);

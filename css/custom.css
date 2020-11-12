@@ -7233,7 +7233,7 @@ body {
   background-position: 65% 20%; }
   @media (max-width: 540px) {
     .header {
-      background-image: linear-gradient(to right, black, rgba(0, 11, 12, 0.7), black), url(/img/teal-sm.jpg); } }
+      background-image: linear-gradient(to right, black, rgba(0, 11, 12, 0.7), rgba(0, 0, 0, 0.7)), url(/img/teal-sm.jpg); } }
   @media (min-resolution: 192dpi) and (min-width: 540px), (min-width: 2000px) {
     .header {
       background-image: linear-gradient(to right, black, rgba(0, 11, 12, 0.7), black), url(/img/teal-xxl.jpg); } }
@@ -7489,23 +7489,42 @@ body {
 
 .btn-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-sizing: content-box; }
+  @media (min-width: 576px) {
+    .btn-wrapper {
+      flex-direction: row; } }
+  @media (min-width: 992px) {
+    .btn-wrapper {
+      flex-direction: column; } }
 
 .btn-visit {
-  width: 48%;
+  width: 100%;
   align-self: start;
   border: 1px solid var(--color-teal-med); }
+  @media (min-width: 576px) {
+    .btn-visit {
+      width: 48%; } }
+  @media (min-width: 992px) {
+    .btn-visit {
+      width: 100%; } }
 
 .btn-git {
   align-self: start;
-  width: 48%;
+  width: 100%;
   background-color: transparent;
   border: 1px solid var(--color-teal-med);
   color: var(--color-teal-med);
   font-weight: 500;
   text-transform: uppercase; }
+  @media (min-width: 576px) {
+    .btn-git {
+      width: 48%; } }
+  @media (min-width: 992px) {
+    .btn-git {
+      width: 100%; } }
   .btn-git:hover {
     background-color: rgba(76, 165, 173, 0.1);
     color: var(--color-teal-med); }
