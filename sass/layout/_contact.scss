@@ -7,14 +7,27 @@
   border-top: 10px solid var(--color-teal-med);
   background: linear-gradient(
       -70deg,
-      rgba(14, 124, 134, 0.4) 40%,
+      rgba(238, 253, 255, 0.95) 40%,
       rgba(255, 255, 255, 1) 40.2%
     ),
     url(/img/keyboard.jpg);
   background-size: cover;
-  color: var(--color-teal-med);
+  color: #102a43;
   font-weight: 500;
   font-size: 14px;
+
+  @include respond(md) {
+    background: linear-gradient(
+        -70deg,
+        rgba(4, 78, 84, 0.7) 40%,
+        rgba(255, 255, 255, 1) 40.2%
+      ),
+      url(/img/keyboard.jpg);
+  }
+}
+
+.form-title {
+  color: var(--color-teal-med);
 }
 
 .form-control {
@@ -23,7 +36,7 @@
   width: 100%;
   border-radius: 0;
   background-color: #f0f4f8;
-  border: 1px solid rgba($color: #0e7c86, $alpha: 0.2);
+  border: 1px solid rgba($color: #486581, $alpha: 0.2);
 }
 
 .btn-form {

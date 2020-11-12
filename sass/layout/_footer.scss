@@ -1,10 +1,12 @@
 .footer {
-  background-color: var(--color-teal-dark);
+  background-color: #01171a;
   color: var(--color-white);
+  margin-top: 6rem;
 
   &__logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
   }
 
   &__list {
@@ -17,32 +19,34 @@
     font-weight: 500;
     text-transform: uppercase;
     font-size: 10px;
-    color: #87eaf2;
-    text-decoration: underline;
+    color: #bcccdc;
 
     @include respond(sm) {
       font-size: 12px;
     }
 
     &:hover {
-      text-decoration: none;
+      color: #f0f4f8;
     }
   }
 
   &__copyright {
-    padding: 12px;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
     font-size: 12px;
     margin: 0 -15px;
     color: #bcccdc;
+    background: url(/img/opaque.svg);
+    background-size: cover;
     background-color: #01171a;
   }
 
   &__icons {
-    color: #87eaf2;
+    color: #bcccdc;
     transition: all 0.2s;
 
     &:hover {
-      color: #87eaf2;
+      color: #bcccdc;
       transform: translateY(-10%);
     }
   }
